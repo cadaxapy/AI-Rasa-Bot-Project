@@ -1,0 +1,55 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- name
+- weather
+- translate
+- wiki
+entities:
+- name
+- city
+- word
+- lang
+- wiki_word
+
+
+slots:
+  wiki_word:
+    type: text
+  name:
+    type: text
+  city: 
+    type: text
+  word: 
+    type: text
+  lang:
+    type: text
+
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_joke
+- action_weather
+- action_translate
+- action_wiki
+
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+  
